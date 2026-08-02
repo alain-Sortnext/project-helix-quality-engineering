@@ -1,0 +1,21 @@
+name: Testability Improvement
+description: Suggest an improvement to make something more testable
+labels: ["testability"]
+body:
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current state — what makes this hard to test
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-improvement
+    attributes:
+      label: Proposed improvement
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated effort
+      options: [Small, Medium, Large]

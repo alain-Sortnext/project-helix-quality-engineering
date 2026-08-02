@@ -1,0 +1,31 @@
+name: Quality Risk
+description: Log a quality risk identified during the project
+labels: ["quality-risk"]
+body:
+  - type: input
+    id: risk-id
+    attributes:
+      label: Risk ID
+      placeholder: e.g. QR-001
+    validations:
+      required: true
+  - type: textarea
+    id: risk-statement
+    attributes:
+      label: Risk statement
+    validations:
+      required: true
+  - type: dropdown
+    id: likelihood
+    attributes:
+      label: Likelihood
+      options: [High, Medium, Low]
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options: [High, Medium, Low]
+  - type: textarea
+    id: proposed-control
+    attributes:
+      label: Proposed control

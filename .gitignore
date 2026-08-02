@@ -1,0 +1,43 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+.npm/
+
+# Build output
+dist/
+build/
+
+# Test reports (generated — not committed)
+cypress/reports/
+playwright/reports/
+performance/reports/
+accessibility/reports/
+
+# Playwright trace files
+playwright/test-results/
+playwright-report/
+
+# Cypress artefacts
+cypress/screenshots/
+cypress/videos/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Database
+*.sql.bak
+database/source-data/*.csv
